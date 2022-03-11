@@ -16,7 +16,7 @@ public class Game{
         mode = systemin.nextInt();
         //catches all non-[0,1,-1] ints
         while (mode != -1 && mode != 0 && mode != 1){
-            System.out.println("That wasn't a 0 or a 1...");
+            System.out.println("Boooo try again...");
             System.out.print("Enter normal mode (0) or hard mode (1): ");
             mode = systemin.nextInt();
         }
