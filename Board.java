@@ -47,14 +47,14 @@ public class Board{
 
         wordlist = onelongstring.split(",");
 
-        ///*the following 5 lines are literally only to be used when ur using fucking wordleans.txt
-        //for some reason it puts an EMPTY space at the beginning that you cant even fucking see wtf
-        String[] forsomereasonthefirstvalisfuckingempty = new String[wordlist.length-1];
+        /*the following 5 lines are literally only to be used when ur using wordleans.txt
+        //for some reason it puts an EMPTY space at the beginning that you cant see
+        String[] forsomereasonthefirstvalisempty = new String[wordlist.length-1];
         for (int i=1; i<wordlist.length; i++){
-            forsomereasonthefirstvalisfuckingempty[i-1] = wordlist[i];
+            forsomereasonthefirstvalisempty[i-1] = wordlist[i];
         }
-        wordlist = forsomereasonthefirstvalisfuckingempty;
-        //end random shit*/
+        wordlist = forsomereasonthefirstvalisempty;
+        //end */
 
         return wordlist;
     }
