@@ -38,8 +38,8 @@ N/A
     result should be g-y--
     result is g----
 
-    basically everything fucks up if you guess more than three of the same letter but the answer only has
+    basically everything messes up if you guess more than three of the same letter but the answer only has
     2 of that letter
-    words like nanny, sissy won't fuck it up tho bc they have three letters so the curr count = answer count
+    words like nanny, sissy won't mess it up tho bc they have three letters so the curr count = answer count
 
 
