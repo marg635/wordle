@@ -16,17 +16,17 @@ public class Game{
         mode = systemin.nextInt();
         //catches all non-[0,1,-1] ints
         while (mode != -1 && mode != 0 && mode != 1){
-            System.out.println("Boooo try again...");
+            System.out.println("Try again...");
             System.out.print("Enter normal mode (0) or hard mode (1): ");
             mode = systemin.nextInt();
         }
         if (mode == -1){
-            System.out.println("================================DEBUG MODE ACTIVE================================");
+            System.out.println("================================test================================");
         }
 
 
         //!!!change the wordle file here!!!
-        String activewordlist = "wordleans.txt";
+        String activewordlist = "fakewordle.txt";
         Board theboard = new Board(5,6,mode,activewordlist);
 
         //continue game until u guess right or run out of turns
@@ -34,7 +34,7 @@ public class Game{
             System.out.print("Guess a " + theboard.getWordlen() + "-letter word: ");
             response = systemin.next();
 
-            while (response.length() != theboard.getWordlen() || theboard.checkifWord(response,"dictionary.txt") == false){
+            while (response.length() != theboard.getWordlen() || theboard.checkifWord(response,"fakewordle.txt") == false){
                 System.out.println("Sorry, that wasn't an acceptable word.");
                 System.out.println("=====================================");
                 System.out.print("Guess a " + theboard.getWordlen() + "-letter word: ");
@@ -62,9 +62,8 @@ public class Game{
             if (systemin.nextInt() == 6666){
                 System.out.println("==============================BONUS LEVELS UNLOCKED==============================");
                 System.out.println("Which version would you like to play?");
-                System.out.println("*All versions use 6-letter words*");
-                System.out.println("*Non-word guesses allowed, but be aware that guesses with 3+ of the same letter may mess up the system*");
-                System.out.println("Bonus levels: Presidentdle (-9), Citydle (-8), Messidle (-7)");
+                System.out.println("*Non-word guesses allowed");
+                System.out.println("Bonus levels: Presidents (-9), Cities (-8)");
                 int choice = systemin.nextInt();
                 String slist; //corr to .txt files in src
                 String sresponse; //user current guess
